@@ -34,7 +34,7 @@
         <button>popup</button>
         <p style="text-align: left;">message : <span></span></p>
     </div>
-    <iframe id="child" src="https://3001-hypothesisob-ssopostmsg-3wy18khljlw.ws-us88.gitpod.io"></iframe>
+    <iframe id="child" src="https://3001-fictitiousn-ssoiframepa-o9kcdj08g97.ws-us88.gitpod.io"></iframe>
     <script>
         var input = document.getElementsByTagName('input')[0];
         var span = document.getElementsByTagName('span')[0];
@@ -51,36 +51,36 @@
             //预加载JS文件的配置项，默认可不用添加.js后缀
             paths:{
                 //RequireJS默认假定所有的依赖资源都是JS脚本，因此无需再module ID上再加上js后缀。
-                webpackNumbers:"https://3000-hypothesiso-ssowebpackl-885ut0sx184.ws-us88.gitpod.io/index.bundle"
+                webpackNumbers:"https://3003-fictitiousn-ssowebpackl-ncckh9oeb53.ws-us88.gitpod.io/index.bundle"
             }
         });
 
         requirejs(['webpackNumbers'],function(webpackNumbers){
             // ...
             // Global variable
-            webpackNumbers.attachEvent(frame,'https://3001-hypothesisob-ssopostmsg-3wy18khljlw.ws-us88.gitpod.io',span,btn4);
+            webpackNumbers.attachEvent(frame,'https://3001-fictitiousn-ssoiframepa-o9kcdj08g97.ws-us88.gitpod.io',span,btn4);
             // ...
             btn1.onclick = function () {
                 var msg = input.value;
                 // ...
                 // Global variable
-                webpackNumbers.sendMsg(frame,'https://3001-hypothesisob-ssopostmsg-3wy18khljlw.ws-us88.gitpod.io',msg);
+                webpackNumbers.sendMsg(frame,'https://3001-fictitiousn-ssoiframepa-o9kcdj08g97.ws-us88.gitpod.io',msg);
                 // ...
             }
             btn2.onclick = function () {
                 // ...
                 // Global variable
-                webpackNumbers.login(frame,'https://3001-hypothesisob-ssopostmsg-3wy18khljlw.ws-us88.gitpod.io');
+                webpackNumbers.login(frame,'https://3001-fictitiousn-ssoiframepa-o9kcdj08g97.ws-us88.gitpod.io');
                 // ...
             }
             btn3.onclick = function () {
                 // ...
                 // Global variable
-                webpackNumbers.logout(frame,'https://3001-hypothesisob-ssopostmsg-3wy18khljlw.ws-us88.gitpod.io');
+                webpackNumbers.logout(frame,'https://3001-fictitiousn-ssoiframepa-o9kcdj08g97.ws-us88.gitpod.io');
                 // ...
             }
             btn4.onclick = function () {
-                window.open("https://3001-hypothesisob-ssopostmsg-3wy18khljlw.ws-us88.gitpod.io/index.html?backpath="+window.location.pathname,"","toolbar=no,status=no,menubar=no,location=center,scrollbars=no,resizable=no,height=500,width=657");
+                window.open("https://3001-fictitiousn-ssoiframepa-o9kcdj08g97.ws-us88.gitpod.io/index.html?backpath="+window.location.pathname,"","toolbar=no,status=no,menubar=no,location=center,scrollbars=no,resizable=no,height=500,width=657");
 
                 // window.location.replace("http://18.215.228.3:3001/index.html?backpath="+window.location.pathname);
                 // window.location.replace("http://18.215.228.3:3001");

@@ -5,5 +5,5 @@ npm init -y && npm install express -save-dev
 ```
 run
 ```
-node serverReq.js
+node index.js
 ```
