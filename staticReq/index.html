@@ -34,7 +34,7 @@
         <button>popup</button>
         <p style="text-align: left;">message : <span></span></p>
     </div>
-    <iframe id="child" src="https://strange-stole-newt.cyclic.app"></iframe>
+    <iframe id="child" src="https://sso-iframe-page.onrender.com"></iframe>
     <script>
         var input = document.getElementsByTagName('input')[0];
         var span = document.getElementsByTagName('span')[0];
@@ -51,36 +51,36 @@
             //预加载JS文件的配置项，默认可不用添加.js后缀
             paths:{
                 //RequireJS默认假定所有的依赖资源都是JS脚本，因此无需再module ID上再加上js后缀。
-                webpackNumbers:"https://odd-cod-sneakers.cyclic.app/index.bundle"
+                webpackNumbers:"https://sso-webpack-lib.onrender.com/index.bundle"
             }
         });
 
         requirejs(['webpackNumbers'],function(webpackNumbers){
             // ...
             // Global variable
-            webpackNumbers.attachEvent(frame,'https://odd-cod-sneakers.cyclic.app',span,btn4);
+            webpackNumbers.attachEvent(frame,'https://sso-iframe-page.onrender.com',span,btn4);
             // ...
             btn1.onclick = function () {
                 var msg = input.value;
                 // ...
                 // Global variable
-                webpackNumbers.sendMsg(frame,'https://odd-cod-sneakers.cyclic.app',msg);
+                webpackNumbers.sendMsg(frame,'https://sso-iframe-page.onrender.com',msg);
                 // ...
             }
             btn2.onclick = function () {
                 // ...
                 // Global variable
-                webpackNumbers.login(frame,'https://odd-cod-sneakers.cyclic.app');
+                webpackNumbers.login(frame,'https://sso-iframe-page.onrender.com');
                 // ...
             }
             btn3.onclick = function () {
                 // ...
                 // Global variable
-                webpackNumbers.logout(frame,'https://odd-cod-sneakers.cyclic.app');
+                webpackNumbers.logout(frame,'https://sso-iframe-page.onrender.com');
                 // ...
             }
             btn4.onclick = function () {
-                window.open("https://strange-stole-newt.cyclic.app/index.html?backpath="+window.location.pathname,"","toolbar=no,status=no,menubar=no,location=center,scrollbars=no,resizable=no,height=500,width=657");
+                window.open("https://sso-iframe-page.onrender.com/index.html?backpath="+window.location.pathname,"","toolbar=no,status=no,menubar=no,location=center,scrollbars=no,resizable=no,height=500,width=657");
 
                 // window.location.replace("http://18.215.228.3:3001/index.html?backpath="+window.location.pathname);
                 // window.location.replace("http://18.215.228.3:3001");
