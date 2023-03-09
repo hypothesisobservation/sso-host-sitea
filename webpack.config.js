@@ -12,7 +12,8 @@ module.exports = {
   devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "src", "index.html")
+      template: path.resolve(__dirname, "src", "index.html"),
+      scriptLoading: 'module'//webpack es module
     })
   ],
   module: {
@@ -23,5 +24,13 @@ module.exports = {
         use: ["babel-loader"]
       }
     ]
-  }
+  },
+  //webpack es module
+  experiments: {
+    outputModule: true,
+  },
+  externalsType: 'module',
+  externals: {
+    webpackNumbers: 'https://sso-webpack-lib.onrender.com/index.bundle.js',
+  },
 };

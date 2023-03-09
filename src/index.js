@@ -1,6 +1,6 @@
 import React, {  useEffect } from "react";
 import { render } from "react-dom";
-
+import * as webpackNumbers from 'webpackNumbers';//webpack es module
 function App() {
     useEffect (() =>{
          window.input = document.getElementsByTagName('input')[0];
@@ -33,7 +33,7 @@ function App() {
         btn4.onclick = function () {
             window.open("https://sso-iframe-page.onrender.com/index.html?backpath="+window.location.pathname,"","toolbar=no,status=no,menubar=no,location=center,scrollbars=no,resizable=no,height=500,width=657");
         }
-        console.log('hello');
+        console.log(webpackNumbers.numToWord(2));
     })
 
     return (
